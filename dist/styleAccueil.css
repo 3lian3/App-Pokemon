@@ -1,0 +1,66 @@
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    min-height: 100vh;
+  }
+
+  .message-accueil{
+    height: 100vh;
+    min-height: 700px;
+    border-bottom: 1px solide #f1f1f124;
+    text-align: center;
+    padding-top: 850px;
+    position: relative;
+    background: url(../ressources/infirmerieFace.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: clamp(20px, 8vw, 50px);
+    display: inline-block;
+    font-weight: 500;
+    color: #f0f0f0;
+    background-image:linear-gradient(to right, #13baed, #097494,#064a5d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+  }
+  h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background: #ebebeb;
+    right: -10px;
+    top: 0;
+    animation: carret 1s infinite;
+  }
+
+  .infirmerie{
+    width: 100vw;
+    height: 100vh;
+  }
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #d87330;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
