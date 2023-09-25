@@ -23,7 +23,7 @@ Pour exécuter ce projet, suivez les étapes suivantes :
 
 1. Clonez ce dépôt : 
     ```
-    git clone [url_du_dépôt]
+    git clone https://github.com/3lian3/App-Pokemon.git
     ```
 2. Installez les dépendances :
     ```
