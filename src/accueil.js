@@ -1,7 +1,7 @@
 var title = document.querySelector("h1");
 var subtitle = document.querySelector(".subtitle");
 var link = document.querySelector(".link");
-var txt = "Bienvenue à l'infirmarie Pokemon";
+var txt = "Bienvenue à l'infirmerie Pokemon";
 function typewriter(text, index) {
     if (index > 3)
         subtitle.classList.add("active");
@@ -19,9 +19,14 @@ setTimeout(function () {
 }, 300);
 link.addEventListener("click", slideDown);
 function slideDown(e) {
-    // e.preventDefault();
-    window.scrollTo({
-        top: document.querySelector("".concat(e.target.getAttribute("href"))).offsetTop,
-        behavior: "smooth",
-    });
+    var targetElement = document.querySelector("".concat(e.target.getAttribute("href")));
+    if (targetElement !== null) {
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+        });
+    }
+    else {
+        console.error("Élément cible non trouvé");
+    }
 }

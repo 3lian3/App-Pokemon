@@ -21,8 +21,15 @@ setTimeout(() => {
 link.addEventListener("click", slideDown);
 
 function slideDown(e) {
-  window.scrollTo({
-    top: document.querySelector(`${e.target.getAttribute("href")}`).offsetTop,
-    behavior: "smooth",
-  });
+  const targetElement = document.querySelector(`${e.target.getAttribute("href")}`);
+  
+  if (targetElement !== null) {
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: "smooth",
+    });
+  } else {
+    console.error("Élément cible non trouvé");
+  }
 }
+
