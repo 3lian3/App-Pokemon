@@ -36,7 +36,8 @@ Pour exécuter ce projet, suivez les étapes suivantes :
 
 ## Captures d'écran
 
-[Insérez des captures d'écran de l'application pour donner un aperçu visuel]
+![image](https://github.com/3lian3/App-Pokemon/assets/129569092/f5423310-54a7-4012-9442-0b3139ee5196)
+
 
 ## Contribuer
 
